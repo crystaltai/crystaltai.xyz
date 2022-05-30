@@ -4,7 +4,8 @@ import styled from 'styled-components';
 const Home = () => {
   return (
     <div>
-      I'm the HOME page! and <Button>CLICK</Button>
+      <h1>I'm the HOME page!</h1>
+      <Button>CLICK</Button>
     </div>
   );
 };
