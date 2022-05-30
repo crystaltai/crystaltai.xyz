@@ -1,5 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import Navbar from '../Navbar/Navbar';
 import GithubLogo from '../../images/github.svg';
 import LinkedinLogo from '../../images/linkedin.svg';
 import TwitterLogo from '../../images/twitter.svg';
@@ -8,21 +10,30 @@ import Logo from '../../images/logo.png';
 const Header = () => {
   return (
     <HeaderWrapper>
-      <div>
+      <Link to='/'>
         <img src={Logo} alt='Logo' width='50px' />
-      </div>
+      </Link>
       <Navigation>
-        <NavBtn>About</NavBtn>
-        <NavBtn>Stack</NavBtn>
-        <NavBtn>Repos</NavBtn>
-        <NavBtn>Changelog</NavBtn>
-        <NavBtn>
+        <Navbar />
+        <NavBtn
+          onClick={() => {
+            window.open('https://github.com/crystaltai');
+          }}
+        >
           <img src={GithubLogo} alt='Github Logo' width='18px' />
         </NavBtn>
-        <NavBtn>
-          <img src={LinkedinLogo} alt='Linkedin Logo' width='18px' />
+        <NavBtn
+          onClick={() => {
+            window.open('https://linkedin.com/in/crystaltai');
+          }}
+        >
+          <img src={LinkedinLogo} alt='Linkedin Logo' width='19px' />
         </NavBtn>
-        <NavBtn>
+        <NavBtn
+          onClick={() => {
+            window.open('https://twitter.com/crystaltaixyz');
+          }}
+        >
           <img src={TwitterLogo} alt='Twitter Logo' width='18px' />
         </NavBtn>
       </Navigation>
@@ -49,11 +60,7 @@ const Navigation = styled.div`
 
 const NavBtn = styled.button`
   background: #f9f9f9;
-  padding: 5px 15px;
-  font-size: 11px;
-  font-family: 'Nunito', sans-serif;
-  text-transform: uppercase;
-  text-align: center;
+  padding: 3px 15px;
   line-height: 0;
   cursor: pointer;
   border: none;

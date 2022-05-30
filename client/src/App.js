@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import GlobalStyles from './theme/globalStyles';
 import Header from './components/Header/Header';
 import About from './pages/About/About';
@@ -10,13 +10,11 @@ const App = () => {
   return (
     <Page>
       <GlobalStyles />
-      <Header />
-      <BrowserRouter>
-        <div>
-          <Route exact path='/' component={Home} />
-          <Route exact path='/about' component={About} />
-        </div>
-      </BrowserRouter>
+      <Router>
+        <Header />
+        <Route exact path='/' component={Home} />
+        <Route exact path='/about' component={About} />
+      </Router>
     </Page>
   );
 };
