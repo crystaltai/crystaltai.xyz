@@ -21,7 +21,7 @@ const GlobalStyles = createGlobalStyle`
 	}
 
 	
-	${'' /* Page Title Headers */}
+	${'' /* Page Title Header - Inter */}
 	h1 {
 		font-family: 'Inter', sans-serif;
 		font-size: 28px;
@@ -29,11 +29,19 @@ const GlobalStyles = createGlobalStyle`
 		text-transform: uppercase;
 	}
 
-	${'' /* xxx */}
+	${'' /* Page Title Header - Nunito */}
 	h2 {
 		font-family: 'Nunito', sans-serif;
-		font-size: 26px;
+		font-size: 28px;
+		font-weight: 800;
 	}
+
+	h3 {
+		font-family: 'Nunito', sans-serif;
+		font-size: 25px;
+		font-weight: 600;
+	}
+
 
 `;
 
