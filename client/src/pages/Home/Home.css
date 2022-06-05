@@ -2,4 +2,17 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  max-width: 90%;
+}
+
+@media (min-width: 700px) {
+  .home-wrapper {
+    max-width: 80%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .home-wrapper {
+    max-width: 60%;
+  }
 }
