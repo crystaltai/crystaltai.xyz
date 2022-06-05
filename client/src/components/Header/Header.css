@@ -1,0 +1,146 @@
+/* LOGO */
+#logo {
+  border-radius: 15%;
+  width: 40px;
+  cursor: pointer;
+  position: fixed;
+  z-index: 100;
+  top: 1.75rem;
+  left: 2rem;
+}
+
+#logo:hover {
+  filter: brightness(105%);
+}
+
+/* HAMBURGER */
+#hamburger {
+  background: #f9f9f9;
+  border: none;
+  border-radius: 15%;
+  cursor: pointer;
+  padding: 6px 7px;
+  position: fixed;
+  z-index: 100;
+  top: 2rem;
+  right: 2rem;
+}
+
+#hamburger:hover {
+  filter: brightness(95%);
+}
+
+#hamburger:active {
+  filter: brightness(90%);
+}
+
+#hamburger-one,
+#hamburger-two {
+  background: black;
+  width: 18px;
+  height: 2px;
+  margin: 5px 0px;
+}
+
+/* NAVIGATION LINKS */
+.menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  padding-top: 5rem;
+  background: rgba(223, 230, 233, 0.5);
+}
+
+.menu.expanded {
+  display: block;
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-transform: uppercase;
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+}
+
+/* MEDIA QUERY */
+@media (min-width: 650px) {
+  /* HEADER */
+  .header {
+    padding: 25px 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  /* LOGO */
+  #logo {
+    width: 50px;
+    position: static;
+  }
+
+  /* HAMBURGER */
+  #hamburger {
+    display: none;
+  }
+
+  /* NAVIGATION LINKS */
+  .menu {
+    display: block;
+    position: static;
+    padding-top: 0;
+    background: none;
+  }
+
+  .menu ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .menu ul li {
+    background: #f9f9f9;
+    font-size: 13px;
+    font-family: 'Nunito', sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    /* padding: 5px 15px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .menu ul li:hover {
+    filter: brightness(95%);
+  }
+
+  .menu ul li:active {
+    filter: brightness(90%);
+  }
+
+  .menu ul li a {
+    padding: 5px 15px;
+    display: block;
+  }
+
+  .social {
+    line-height: 0;
+  }
+
+  #github,
+  #twitter {
+    width: 18px;
+  }
+
+  #linkedin {
+    width: 19px;
+  }
+}

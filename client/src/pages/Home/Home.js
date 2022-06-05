@@ -1,20 +1,13 @@
 import React from 'react';
-import styled from 'styled-components';
 import Intro from '../../components/Intro/Intro';
+import './Home.css';
 
 const Home = () => {
   return (
-    <HomeWrapper>
+    <div className='home-content'>
       <Intro />
-    </HomeWrapper>
+    </div>
   );
 };
 
 export default Home;
-
-const HomeWrapper = styled.div`
-  ${'' /* background: blue; */}
-  margin: 0 auto;
-  display: flex:
-  flex-direction: column;
-`;
