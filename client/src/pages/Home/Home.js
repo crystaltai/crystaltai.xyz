@@ -4,7 +4,7 @@ import './Home.css';
 
 const Home = () => {
   return (
-    <div className='content'>
+    <div className='home-wrapper'>
       <Intro />
     </div>
   );

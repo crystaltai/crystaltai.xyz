@@ -6,7 +6,7 @@ const Intro = () => {
   return (
     <div className='intro-wrapper'>
       <div className='intro-picture'>
-        <img src={Logo} alt='Logo' width='250px' />
+        <img src={Logo} alt='Logo' />
       </div>
       <div className='intro-message'>
         <h2>Hey 👋</h2>
