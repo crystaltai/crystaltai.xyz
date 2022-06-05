@@ -58,7 +58,7 @@
   bottom: 0;
   z-index: 99;
   padding-top: 5rem;
-  background: rgba(223, 230, 233, 0.5);
+  background: rgba(223, 230, 233, 0.95);
 }
 
 .menu.expanded {
