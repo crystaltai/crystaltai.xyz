@@ -1,3 +1,9 @@
+/* HEADER */
+.header {
+  display: block;
+  height: 100px;
+}
+
 /* LOGO */
 #logo {
   border-radius: 15%;
@@ -111,7 +117,6 @@
     cursor: pointer;
     border: none;
     border-radius: 5px;
-    /* padding: 5px 15px; */
     display: flex;
     align-items: center;
     justify-content: center;
