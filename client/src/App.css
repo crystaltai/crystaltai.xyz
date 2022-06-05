@@ -1,5 +1,10 @@
-@media (min-width: 600px) {
-  .content {
+.main-content {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 700px) {
+  .main-content {
     background: green;
     max-width: 1500px;
     width: 100%;

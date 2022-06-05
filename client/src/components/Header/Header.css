@@ -75,7 +75,7 @@
 }
 
 /* MEDIA QUERY */
-@media (min-width: 650px) {
+@media (min-width: 700px) {
   /* HEADER */
   .header {
     padding: 25px 35px;

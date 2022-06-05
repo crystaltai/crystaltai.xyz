@@ -10,8 +10,10 @@ const App = () => {
     <div className='content'>
       <Router>
         <Header />
-        <Route exact path='/' component={Home} />
-        <Route exact path='/about' component={About} />
+        <div className='main-content'>
+          <Route exact path='/' component={Home} />
+          <Route exact path='/about' component={About} />
+        </div>
       </Router>
     </div>
   );
