@@ -1,9 +1,11 @@
 import React from 'react';
+import Intro from '../../components/Intro/Intro';
+import './About.css';
 
 const About = () => {
   return (
-    <div>
-      <h2>I'm the ABOUT page!</h2>
+    <div className='about-content'>
+      <Intro />
     </div>
   );
 };
