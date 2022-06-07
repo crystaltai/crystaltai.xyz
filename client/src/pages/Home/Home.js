@@ -2,6 +2,7 @@ import React from 'react';
 import Intro from '../../components/Intro/Intro';
 import Project from '../../components/Project/Project';
 import './Home.css';
+import '../../App.css';
 
 // Project Details -----
 const projects = [
@@ -28,7 +29,7 @@ const projects = [
 
 const Home = () => {
   return (
-    <div className='home-wrapper'>
+    <div className='wrapper'>
       <Intro />
       <h1>Current Projects</h1>
       {projects.map((project) => (
