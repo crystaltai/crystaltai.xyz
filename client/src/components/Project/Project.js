@@ -16,7 +16,7 @@ const Project = ({ link, status, summary, title }) => {
         <h5>{summary}</h5>
         {link ? (
           <h5>
-            ▶️ Check out my upcoming developments{' '}
+            ⮕ Check out my upcoming developments{' '}
             <a href={link} target='_blank' rel='noreferrer'>
               here
             </a>
