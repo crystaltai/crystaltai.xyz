@@ -140,12 +140,7 @@
     line-height: 0;
   }
 
-  #github,
-  #twitter {
+  .social-icon {
     width: 18px;
-  }
-
-  #linkedin {
-    width: 19px;
   }
 }
