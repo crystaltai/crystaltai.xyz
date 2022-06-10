@@ -1,7 +1,7 @@
 import React from 'react';
 import './Project.css';
 
-const Project = ({ title, status, summary }) => {
+const Project = ({ link, status, summary, title }) => {
   return (
     <div className='project-card'>
       <div className='project-header'>
@@ -14,6 +14,17 @@ const Project = ({ title, status, summary }) => {
       </div>
       <div className='project-summary'>
         <h5>{summary}</h5>
+        {link ? (
+          <h5>
+            ▶️ Check out my upcoming developments{' '}
+            <a href={link} target='_blank' rel='noreferrer'>
+              here
+            </a>
+            .
+          </h5>
+        ) : (
+          ''
+        )}
       </div>
     </div>
   );

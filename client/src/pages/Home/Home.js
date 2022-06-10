@@ -11,6 +11,7 @@ const projects = [
     status: 'In Progress',
     summary:
       "A personal website built using React and Vanilla CSS to implement what I've learned, as well as to document and share my web developer journey. This website will be an on-going project.",
+    link: 'https://crystaltai.notion.site/crystaltai-xyz-516510bddf3d460aad16e2db1f6e2bb0',
   },
   {
     title: 'Project B',
@@ -32,11 +33,12 @@ const Home = () => {
     <div className='wrapper'>
       <Intro />
       <h1>Current Projects</h1>
-      {projects.map((project) => (
+      {projects.map(project => (
         <Project
           title={project.title}
           status={project.status}
           summary={project.summary}
+          link={project.link}
           key={project.title}
         />
       ))}
