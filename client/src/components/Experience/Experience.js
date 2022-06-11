@@ -1,15 +1,20 @@
 import React from 'react';
 import './Experience.css';
 
-const Experience = ({ logo, entity, role, description }) => {
+const Experience = ({ logo, entity, role, summary, years }) => {
   return (
     <div className='experience-card'>
-      <div className='experience-logo'></div>
+      <div className='experience-logo'>
+        <img src={logo} alt={`${entity} logo`} className='entity-logo' />
+      </div>
       <div className='experience-details'>
-        <div>
-          <h4>{entity}</h4>
-          <h4>{role}</h4>
-          <h4>{description}</h4>
+        <div className='experience-header'>
+          <h3 className='experience-entity'>{entity}</h3>
+          <h5 className='experience-years'>{years}</h5>
+        </div>
+        <div className='experience-description'>
+          <h5 className='experience-role'>{role}</h5>
+          {/* <h5>{summary}</h5> */}
         </div>
       </div>
     </div>

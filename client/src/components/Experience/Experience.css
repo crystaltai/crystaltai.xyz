@@ -1,6 +1,64 @@
+/* Entire Experience CARD */
 .experience-card {
   background: #f5f5f5;
   display: flex;
-  padding: 10px;
+  align-items: center;
+  padding: 15px;
   margin-bottom: 10px;
+}
+
+.experience-card h5 {
+  font-size: 14px;
+}
+
+/* Logo image */
+.entity-logo {
+  width: 80px;
+  border-radius: 15%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Div containing all details */
+.experience-details {
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  width: 100%;
+}
+
+/* Div containing Entity and Years */
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Entity */
+.experience-entity {
+  margin: 0;
+  font-size: 20px;
+}
+
+/* Years */
+.experience-years {
+  display: none;
+}
+
+/* Div containing Role and Summary */
+.experience-description {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+/* Role */
+.experience-role {
+  color: #747d8c;
+}
+
+@media (min-width: 700px) {
+  .experience-years {
+    display: block;
+  }
 }
