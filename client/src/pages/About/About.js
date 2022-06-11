@@ -1,18 +1,25 @@
 import React from 'react';
 import Experience from '../../components/Experience/Experience';
-import Intro from '../../components/Intro/Intro';
+import ExperienceList from './constants';
 import './About.css';
 import '../../App.css';
 
 const About = () => {
   return (
     <div className='wrapper'>
-      <Intro />
       <h1>Career</h1>
-      <div className='career-wrapper'>
-        <Experience entity={'EY'} role={'Software Engineer'} description={'poo poo poo'} />
+      <div className='experience-wrapper'>
+        {ExperienceList.map(({ entity, logo, role, summary, years }) => (
+          <Experience
+            entity={entity}
+            logo={logo}
+            role={role}
+            summary={summary}
+            years={years}
+            key={role}
+          />
+        ))}
       </div>
-      <h1>Education</h1>
     </div>
   );
 };
