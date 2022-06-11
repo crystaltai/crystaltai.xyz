@@ -1,5 +1,4 @@
 .intro-wrapper {
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,18 +13,11 @@
 
 @media (min-width: 700px) {
   .intro-wrapper {
-    align-items: center;
     flex-direction: row;
     margin-bottom: 20px;
   }
 
   .intro-message {
     margin-left: 30px;
-  }
-}
-
-@media (min-width: 1000px) {
-  .intro-picture img {
-    width: 250px;
   }
 }

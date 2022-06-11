@@ -1,29 +1,19 @@
-/* Main Content (whole section below Header) */
-.main-content {
+/* Content (whole website including Header) */
+.content {
   display: flex;
   flex-direction: column;
 }
 
-/* Wrapper (wraps each page)*/
+/* Wrapper (wraps each page under Header)*/
 .wrapper {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  max-width: 90%;
-}
-
-@media (min-width: 700px) {
-  .main-content {
-    max-width: 1500px;
-  }
-
-  .wrapper {
-    max-width: 80%;
-  }
 }
 
 @media (min-width: 1000px) {
-  .wrapper {
-    max-width: 60%;
+  .content {
+    max-width: 950px;
+    min-width: 950px;
   }
 }
