@@ -1,19 +1,23 @@
+/* Entire application styles */
+#app {
+  display: flex;
+}
+
+@media (min-width: 1000px) {
+  #app {
+    width: 950px;
+  }
+}
+
 /* Content (whole website including Header) */
 .content {
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  width: 95vw;
 }
 
 /* Wrapper (wraps each page under Header)*/
 .wrapper {
   display: flex;
   flex-direction: column;
-}
-
-@media (min-width: 1000px) {
-  .content {
-    max-width: 950px;
-    min-width: 950px;
-  }
 }
