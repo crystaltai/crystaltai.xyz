@@ -1,3 +1,6 @@
+/* ------------------------------------------------------------------------------------------------ */
+/* SMALLER SCREENS - WIDTH < 700px */
+/* ------------------------------------------------------------------------------------------------ */
 /* HEADER */
 .header {
   display: block;
@@ -74,11 +77,12 @@
   font-size: 20px;
 }
 
-/* MEDIA QUERY */
+/* ------------------------------------------------------------------------------------------------ */
+/* LARGER SCREENS - WIDTH > 700px */
+/* ------------------------------------------------------------------------------------------------ */
 @media (min-width: 700px) {
   /* HEADER */
   .header {
-    /* width: 100%; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -106,12 +110,13 @@
   .menu ul {
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 10px;
   }
 
   .menu ul li {
     background: #f9f9f9;
-    font-size: 13px;
+    font-size: 12px;
     font-family: 'Nunito', sans-serif;
     text-transform: uppercase;
     cursor: pointer;
@@ -141,6 +146,6 @@
   }
 
   .social-icon {
-    width: 18px;
+    width: 16px;
   }
 }
